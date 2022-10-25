@@ -1,5 +1,4 @@
 export function Dashboard(){
-
     return(
         <div className="flex  h-[100vh]">
             <div className="flex flex-col w-[20%] bg-orange-400">
@@ -33,7 +32,7 @@ export function Dashboard(){
                     <label htmlFor="" className="w-56 h-5 bg-white mt-4 rounded-xl"></label>
                 </div>
             </div>
-            <h1>Dashboard</h1>
+            
         </div>
     )
 }
