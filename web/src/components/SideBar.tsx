@@ -23,7 +23,7 @@ export function SideBar(){
 
                 </div>
                 <div className="flex flex-col flex-1 items-center p-6">
-                    <button className="w-56 h-5 bg-white mt-4 items-center rounded-xl">
+                    <button className="w-56 h-5 bg-white mt-4 items-center rounded-xl hover:bg-gray-600 hover:text-white">
                         Deslogar
                     </button>
             </div>
