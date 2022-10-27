@@ -1,6 +1,7 @@
 import { Card } from "../components/Card";
 import { SideBar } from "../components/SideBar";
 import { TableItems } from "../components/TableItems";
+
 export function Dashboard(){
 
     const elementos = [{
@@ -44,9 +45,9 @@ export function Dashboard(){
                     <Card title="Categoria Mais Comprada" description="Indica a categoria mais comprada" nomeItem="Nome da Categoria"/>
                     <Card title="Setor com mais solicitação" description="Indica o setor que mais faz solicitação" nomeItem="Nome do Setor"/>
                 </div>
-                <div className="flex flex-1 items-start justify-center object-fill">
-                    <table className="w-[90%] h-[65%] mt-14 table-fixed">
-                        {/* <caption className="my-10 text-3xl">Nossos elementos</caption> */}
+                <div className="flex flex-1 items-start justify-center object-fill mt-6">
+                    {/* <table className="w-[90%] h-[65%] mt-14 table-fixed">
+                        {/* <caption className="my-10 text-3xl">Nossos elementos</caption> }
                         <thead className="border-2 border-black bg-gray-300">
                             <th className="border-2 border-black w-6">ID</th>
                             <th className="border-2 border-black w-14">Loja</th>
@@ -72,7 +73,13 @@ export function Dashboard(){
                         <td>
                             <tr></tr>
                         </td>
-                    </table>
+                    </table> */}
+
+                    <div className="flex flex-1 w-full h-full items-center justify-center">
+                        <img src="/vendas por cartegoria.png" alt="Graph" />
+                    </div>
+
+
                 </div>
                 
                 
