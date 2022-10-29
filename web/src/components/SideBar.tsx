@@ -3,7 +3,7 @@ import { Navegator } from "./Navagator";
 export function SideBar(){
 
     return(
-        <div className="flex flex-col w-[20%] bg-orange-400">
+        <div className="flex flex-col w-[20%] bg-[#f37421]">
             <div className="flex flex-col  h-[45%]  items-center">
                 <div className="flex w-36 h-36 border mt-10 rounded-full bg-white">
                     {/* Espaço para colocar a imagem que será recebida pelo login do google API */}
