@@ -1,28 +1,35 @@
 
 interface tableItemsProps{
-    id: number;
-    loja: string;
+    fornecedor: string;
     produto: string;
-    preco: number;
-    setor: string;
-    diapedido: string;
-    prevEntrega?: string;
-    entrega: string;
+    valor: number;
+    avaliacao: string;
+    image?: string;
+    
 
 }
 
-export function TableItems({id,loja,produto, preco, setor, diapedido,prevEntrega="0",entrega}:tableItemsProps){
+export function TableItems({fornecedor, produto, valor, avaliacao, image}:tableItemsProps){
 
     return(
-        <>
-            <th className="border-2 border-black">{id}</th>
-            <th className="border-2 border-black">{loja}</th>
-            <th className="border-2 border-black">{produto}</th>
-            <th className="border-2 border-black">{preco}</th>
-            <th className="border-2 border-black">{setor}</th>
-            <th className="border-2 border-black">{diapedido}</th>
-            <th className="border-2 border-black">{prevEntrega}</th>
-            <th className="border-2 border-black">{entrega}</th>
-        </>
+        <tr>
+            <td className="flex px-6 py-4 text-sm text-gray-800 whitespace-nowrap">
+                <img src={image} alt="perfil" className="rounded-full w-6 h-6"/>
+                {fornecedor}
+            </td>
+            <td className="px-6 py-4 text-sm text-gray-800 whitespace-nowrap">
+                {produto}
+            </td>
+            <td className="px-6 py-4 text-sm font-medium text-right whitespace-nowrap">
+                {valor}
+            </td>
+            <td className="px-6 py-4 text-sm font-medium text-right whitespace-nowrap">
+                {avaliacao}
+            </td>
+            <td className="px-6 py-4 text-sm font-medium text-right whitespace-nowrap">
+                <button className="w-28 h-8 bg-black text-white rounded-md">Ver detelhes</button>
+            </td>
+    </tr>
+   
     )
 }
