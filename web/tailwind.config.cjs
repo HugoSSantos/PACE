@@ -2,7 +2,13 @@
 module.exports = {
   content: ['./src/**/*.{ts,tsx,js,jsx}'],
   theme: {
-    extend: {},
+    extend: {
+    gridTemplateColumns: {
+                'auto-fit': 'repeat(auto-fit, minmax(320px, 1fr))',
+                'auto-fill': 'repeat(auto-fill, minmax(0, 1fr))',
+              },},
   },
-  plugins: [],
+  plugins: [
+    require('tailwind-scrollbar')
+],
 }

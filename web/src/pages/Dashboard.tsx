@@ -45,7 +45,7 @@ export function Dashboard(){
     return(
         <div className="flex object-contain h-[100vh]">
             <SideBar/>
-            <div className="flex flex-col object-fill justify-start">
+            <div className="flex flex-2 flex-col object-fill justify-start">
                 <div className="flex w-full h-56 items-center justify-center mt-8">
                     <Card title="Melhor Fornecedor" description="Indica o melhor forcenedor" nomeItem="Nome do Fornecedor"/>
                     <Card title="Produto Mais Comprado" description="Indica o produto mais comprado" nomeItem="Nome do Produto"/>
@@ -54,20 +54,20 @@ export function Dashboard(){
                 </div>
                 <div className="flex flex-1 items-start justify-center object-fill mt-2">
                     {
-                    <div className="flex flex-col w-full h-[75%]">
-                        <div className="overflow-x-auto">
+                    <div className="flex flex-col w-full">
+                        <div className="overflow-x-auto  scrollbar-thin scrollbar-track-transparent">
                             <div className="p-1.5 w-full inline-block align-middle">
                                 <div className="border rounded-lg">
 
                                     <table className="min-w-full divide-y-8 ">
-                                        <thead className="bg-[#D9D9D9] relative">
+                                        <thead className="bg-[#D9D9D9]">
                                             <th scope="col" className="px-6 py-4 text-xs">Fornecedor</th>
                                             <th scope="col" className="px-6 py-4 text-xs">Produto</th>
                                             <th scope="col" className="px-6 py-4 text-xs">Valor</th>
                                             <th scope="col" className="px-6 py-4 text-xs">Avaliação</th>
                                             <th scope="col" className="px-6 py-4 text-xs">Detalhes</th>
                                         </thead>
-                                        <tbody className="divide-y-8 overflow-scroll scroll-smooth">
+                                        <tbody className="divide-y-8">
                                             {elementos.map(item => (
                                                 <TableItems
                                                     fornecedor={item.fornecedor}

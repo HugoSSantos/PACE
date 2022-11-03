@@ -14,7 +14,7 @@ export function TableItems({fornecedor, produto, valor, avaliacao, image}:tableI
     return(
         <tr>
             <td className="flex px-6 py-4 text-sm text-gray-800 whitespace-nowrap">
-                <img src={image} alt="perfil" className="rounded-full w-6 h-6"/>
+                {image ? <img src={image} alt="perfil" className="rounded-full w-6 h-6 mr-1"/>  : <div className="w-6 h-6 mr-1 bg-gray-600 rounded-full"></div>}
                 {fornecedor}
             </td>
             <td className="px-6 py-4 text-sm text-gray-800 whitespace-nowrap">
