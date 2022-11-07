@@ -39,27 +39,59 @@ export function Dashboard(){
         produto: "Dell 14",
         valor: 7873.14,
         avalicao: "chegou",
+    },
+    {
+        id: 5,
+        fornecedor: "Dell Brasil",
+        produto: "Dell 14",
+        valor: 7873.14,
+        avalicao: "chegou",
+    },
+    {
+        id: 5,
+        fornecedor: "Dell Brasil",
+        produto: "Dell 14",
+        valor: 7873.14,
+        avalicao: "chegou",
+    },
+    {
+        id: 5,
+        fornecedor: "Dell Brasil",
+        produto: "Dell 14",
+        valor: 7873.14,
+        avalicao: "chegou",
+    },
+    {
+        id: 5,
+        fornecedor: "Dell Brasil",
+        produto: "Dell 14",
+        valor: 7873.14,
+        avalicao: "chegou",
+    },
+    {
+        id: 5,
+        fornecedor: "Dell Brasil",
+        produto: "Dell 14",
+        valor: 7873.14,
+        avalicao: "chegou",
     }
 ]
 
     return(
-        <div className="flex object-contain h-[100vh]">
+        <div className="flex object-fill max-h-[100vh]">
             <SideBar/>
             <div className="flex flex-2 flex-col object-fill justify-start">
-                <div className="flex w-full h-56 items-center justify-center mt-8">
+                <div className="flex w-full h-56 items-center justify-center mt-4">
                     <Card title="Melhor Fornecedor" description="Indica o melhor forcenedor" nomeItem="Nome do Fornecedor"/>
                     <Card title="Produto Mais Comprado" description="Indica o produto mais comprado" nomeItem="Nome do Produto"/>
                     <Card title="Categoria Mais Comprada" description="Indica a categoria mais comprada" nomeItem="Nome da Categoria"/>
                     <Card title="Setor com mais solicitação" description="Indica o setor que mais faz solicitação" nomeItem="Nome do Setor"/>
                 </div>
-                <div className="flex flex-1 items-start justify-center object-fill mt-2">
-                    {
-                    <div className="flex flex-col w-full">
-                        <div className="overflow-x-auto  scrollbar-thin scrollbar-track-transparent">
-                            <div className="p-1.5 w-full inline-block align-middle">
-                                <div className="border rounded-lg">
-
-                                    <table className="min-w-full divide-y-8 ">
+                <div className="flex flex-1 items-start justify-center object-fill mt-2 overflow-y-scroll scrollbar-thin scrollbar-thumb-transparent scrollbar-track-transparent">
+                    <div className="flex flex-col w-full ">
+                            <div className="flex p-1.5 w-full">
+                                <div className="border rounded-lg w-full">
+                                    <table className="min-w-full divide-y-8">
                                         <thead className="bg-[#D9D9D9]">
                                             <th scope="col" className="px-6 py-4 text-xs">Fornecedor</th>
                                             <th scope="col" className="px-6 py-4 text-xs">Produto</th>
@@ -85,9 +117,9 @@ export function Dashboard(){
 
                                 </div>
                             </div>
-                        </div>
+                        
                     </div>
-                    } 
+                    
                 
                 </div>
             </div>

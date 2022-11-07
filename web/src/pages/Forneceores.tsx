@@ -84,16 +84,23 @@ export function Fornecedores(){
     ]
 
     return(
-        <div className="flex max-h-[100vh]">
+        <div className="flex max-h-[100vh] overflow-hidden">
             <SideBar/>
             <div className="flex flex-2 w-full flex-col">
-                <div className="w-full mt-12 ">
+                <div className="w-full mt-8 ">
                     <div className="w-[50%] flex-1 ml-12 border border-black items-center justify-center p-2">
                         <MagnifyingGlass size={24} className="absolute"/>
                         <input type="text" className="w-full px-8" placeholder="Pesquise sua categoria"/>
                     </div>
-                    <div className="h-[35rem] overflow-x-scroll scrollbar-thin scrollbar-thumb-transparent scrollbar-track-transparent">
-                        <div className="mt-16 grid grid-cols-auto-fit">
+                    <div className="flex flex-row ml-12 h-8 w-[50%]">
+                        <p className="text-xs">Organizado por: <select name="" id="">
+                            <option value="Mais usada">Mais Comprada</option>
+                            <option value="Menos usada">Menos Comprada</option>
+                            <option value="Maior quantidade">Maior Quantidade</option>
+                            <option value="Menor quantidade">Menor Quantidade</option>
+                            </select></p></div>
+                    <div className="h-[36rem] overflow-x-scroll scrollbar-thin scrollbar-thumb-transparent scrollbar-track-transparent">
+                        <div className="grid grid-cols-auto-fit">
                             {
                                 elementos.map( item => (
                                     <CardFornecedor image={item.image} category={item.categoria} quantity={item.quantidade}/>
