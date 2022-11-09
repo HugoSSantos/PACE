@@ -1,17 +1,19 @@
+import { SquaresFour } from "phosphor-react";
 
 interface navegatorProps{
     name: string;
+    url: string;
 }
 
 
-export function Navegator({name}: navegatorProps){
+export function Navegator({name, url}: navegatorProps){
 
     return(
-        <div className="flex w-60 items-center  justify-center mt-4 group hover:bg-transparent cursor-pointer">
-            <div className="w-5 h-5 rounded-full bg-white mr-2 group-hover:bg-gray-600  cursor-pointer"></div>
+        <a href={url} className="flex w-60 items-center  justify-center mt-4 group hover:bg-transparent cursor-pointer">
+            <SquaresFour size={24} />
             <label htmlFor="" className="w-48 h-6 px-2 items-center bg-white rounded-xl group-hover:bg-gray-600 group-hover:text-white cursor-pointer">
                 {name}
             </label>
-        </div>
+        </a>
     )
 }

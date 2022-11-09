@@ -24,12 +24,12 @@ function App() {
         <Dialog.Content className='fixed bg-[#2A2634] py-8 px-10 text-white top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-lg w-[480px] shadow-lg shadow-black/25'>
 			<div>
 				<Dialog.Title className='text-3xl font-black'>
-					Registre o seu pedido
+					Adicionar Nova Compra
 				</Dialog.Title>
 				<form className='my-6 flex flex-col gap-2'>
-					<label htmlFor="pedido" className='my-2'>Pedido</label>
+					<label htmlFor="pedido" className='my-2'>Produto</label>
 					<input type="text" placeholder='Informe o número do seu pedido' 
-						className='px-1 border-none'/>
+						className='px-1 border-none h-6'/>
 				</form>
 
 			<div className='flex w-full justify-center items-center'>
