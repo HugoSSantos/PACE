@@ -1,21 +1,27 @@
 import { Note, SquaresFour, Storefront, UserSquare } from "phosphor-react";
 import { Navegator } from "./Navagator";
 
-export function SideBar(){
+interface sideBarProps{
+    name: string;
+    email: string;
+    image?: string;
+}
+
+export function SideBar({name, email, image}:sideBarProps) {
 
     return(
         <div className="flex flex-1 flex-col min-h-[100vh] bg-[#f37421]">
-            <div className="flex flex-col  h-[45%]  items-center">
+            <div className="flex flex-col  h-[45%]  items-center justify-center">
                 <div className="flex w-36 h-36 border mt-10 rounded-full bg-white">
-                    {/* Espaço para colocar a imagem que será recebida pelo login do google API */}
+                    {image}
                 </div>
-                <label htmlFor="" className="w-56 h-5 bg-white mt-8 rounded-xl">
-                    {/*Deverá Colocar o nome do usuário recebido pelo login do google */}
+                <h1 className="w-56 h-5 mt-8 text-2xl bold">
+                    {name}
+                </h1>
+                <label htmlFor="" className="w-56 h-5 mt-4">
+                    {email}
                 </label>
-                <label htmlFor="" className="w-56 h-5 bg-white mt-4 rounded-xl">
-                    {/*Deverá colocar o email do usuário recebido pelo login do google */}
-                </label>
-                </div>
+            </div>
                 <div className="flex flex-col h-[45%] items-center justify-start mt-4 p-3">
                     <a href="/" className="flex w-60 items-center  justify-center mt-4 group hover:bg-transparent cursor-pointer">
                         <SquaresFour size={24} className="text-white  group-hover:text-black"/>
