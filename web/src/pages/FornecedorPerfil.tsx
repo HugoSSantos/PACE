@@ -5,9 +5,9 @@ import { SideBar } from "../components/SideBar";
 export function FornecedorPerfil(){
     return(
         <div className='flex'>
-            <SideBar name='Fulano de Tal' email='fdt@pace.com'/>
+            <SideBar name='Fulano de Tal' email='fdt@pace.com' image='https://avatars.githubusercontent.com/u/50108497?v=4.png'/>
             <div className='flex flex-2 flex-col w-full'>
-                <div className='flex h-[50%] flex-col mb-4 border-b border-gray-500'>
+                <div className='flex h-[60%] flex-col mb-4 border-b border-gray-500'>
                     <div className='h-[80%]'>
                         <div className='flex justify-between p-10'>
                             <div className='flex'>
@@ -16,10 +16,21 @@ export function FornecedorPerfil(){
                                     <div>
                                         <h1 className='text-2xl'>Fornecedor</h1>
                                         <h3 className='text-gray-500 text-[0.6rem]'>Razão Social</h3>
-                                    </div>                            
-                                    <p className='py-2'>Fone</p>
-                                    <p>E-mail</p>
-                                    <p className='py-2'><a href="/   ">Site</a></p>
+                                    </div>
+                                    <div>
+                                        <p className=''>Fone</p>
+                                        <a href="tel:+5581997069559" className='decoration-none'>(81)9 97069559</a>
+                                    </div>                         
+                                    <div>
+                                        <p>E-mail</p>
+                                        <a href="mailto:" className='decoration-none'></a>
+                                    </div>
+                                    <div>
+                                        <p className='p'>Site</p>
+                                        <a href="http://" className='decoration-none'></a>
+                                    </div>
+
+                                    
                                 
                                 </div>
                                  

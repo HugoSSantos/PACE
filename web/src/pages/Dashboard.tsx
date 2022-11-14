@@ -79,7 +79,7 @@ export function Dashboard(){
 
     return(
         <div className="flex object-fill max-h-[100vh]">
-            <SideBar/>
+            <SideBar name="#" email="#"/>
             <div className="flex flex-2 flex-col object-fill justify-start">
                 <div className="flex w-full h-56 items-center justify-center mt-4">
                     <Card title="Melhor Fornecedor" description="Indica o melhor forcenedor" nomeItem="Nome do Fornecedor"/>

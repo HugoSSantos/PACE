@@ -1,92 +1,44 @@
-import { SideBar } from "../components/SideBar";
-import { Dashboard } from "./Dashboard";
-import {MagnifyingGlass} from "phosphor-react";
+import { MagnifyingGlass } from "phosphor-react";
 import { CardFornecedor } from "../components/CardFornecedor";
+import { SideBar } from "../components/SideBar";
 
-export function Fornecedores(){
 
-    const elementos =[
+export function Equipe(){
+
+    const elementos = [
         {
             image: "/vite.svg",
-            categoria: "Tecnologia",
+            categoria: "Fulano",
             quantidade: 10
         },
         {
             image: "/vite.svg",
-            categoria: "Grafica",
+            categoria: "Beltrano",
             quantidade: 30
         },
         {
             image: "/vite.svg",
-            categoria: "Grafica",
+            categoria: "Ciclano",
             quantidade: 30
         },
         {
             image: "/vite.svg",
-            categoria: "Grafica",
+            categoria: "Alberlando",
             quantidade: 30
         },
         {
             image: "/vite.svg",
-            categoria: "Grafica",
+            categoria: "Marfiano",
             quantidade: 30
         },
-        {
-            image: "/vite.svg",
-            categoria: "Tecnologia",
-            quantidade: 10
-        },
-        {
-            image: "/vite.svg",
-            categoria: "Grafica",
-            quantidade: 30
-        },
-        {
-            image: "/vite.svg",
-            categoria: "Grafica",
-            quantidade: 30
-        },
-        {
-            image: "/vite.svg",
-            categoria: "Grafica",
-            quantidade: 30
-        },
-        {
-            image: "/vite.svg",
-            categoria: "Grafica",
-            quantidade: 30
-        },
-        {
-            image: "/vite.svg",
-            categoria: "Tecnologia",
-            quantidade: 10
-        },
-        {
-            image: "/vite.svg",
-            categoria: "Grafica",
-            quantidade: 30
-        },
-        {
-            image: "/vite.svg",
-            categoria: "Grafica",
-            quantidade: 30
-        },
-        {
-            image: "/vite.svg",
-            categoria: "Grafica",
-            quantidade: 30
-        },
-        {
-            image: "/vite.svg",
-            categoria: "Grafica",
-            quantidade: 30
-        }
+        
     ]
 
+
     return(
-        <div className="flex max-h-[100vh] overflow-hidden">
-            <SideBar name="Fulano de Tal" email="fdt@pace.com" image="https://avatars.githubusercontent.com/u/50108497?v=4.png"/>
-            <div className="flex flex-2 w-full flex-col">
+    <div className="flex max-h-[100vh]">
+        <SideBar name="Fulano de Tal" email="fdt@pace.com" image="https://avatars.githubusercontent.com/u/50108497?v=4.png"/>
+        <div className="flex flex-2 w-full flex-col">
                 <div className="w-full mt-8 ">
                     <div className="w-[50%] flex-1 ml-12 border border-black items-center justify-center p-2">
                         <MagnifyingGlass size={24} className="absolute"/>
@@ -110,10 +62,8 @@ export function Fornecedores(){
                             }
                         </div>
                     </div>
-
                 </div>
-
-            </div>
         </div>
+    </div>
     )
 }

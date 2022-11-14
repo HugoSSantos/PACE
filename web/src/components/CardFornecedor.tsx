@@ -2,7 +2,7 @@
 interface CardFornecedorProps{
     image: string;
     category: string;
-    quantity: number;
+    quantity?: number;
 }
 
 export function CardFornecedor({image, category, quantity}: CardFornecedorProps){
