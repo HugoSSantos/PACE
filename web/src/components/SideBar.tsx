@@ -1,5 +1,6 @@
 import { Note, SignOut, SquaresFour, Storefront, UserSquare } from "phosphor-react";
 import { Navegator } from "./Navagator";
+import {Link} from "react-router-dom";
 
 interface sideBarProps{
     name: string;
@@ -23,30 +24,30 @@ export function SideBar({name, email, image}:sideBarProps) {
                 </label>
             </div>
             <div className="flex flex-col h-[45%] items-center justify-start mt-4 p-3">
-                    <a href="/" className="flex w-60 items-center  justify-center mt-4 group hover:bg-transparent cursor-pointer">
+                    <Link to="/dashboard" className="flex w-60 items-center  justify-center mt-4 group hover:bg-transparent cursor-pointer">
                         <SquaresFour size={24} className="text-white  group-hover:text-black"/>
                         <label htmlFor="" className="w-48 h-6 px-2 items-center text-white  group-hover:text-black cursor-pointer">
                             Dashboard
                         </label>
-                    </a>
-                    <a href="/" className="flex w-60 items-center  justify-center mt-4 group hover:bg-transparent cursor-pointer">
+                    </Link>
+                    <Link to="/fornecedores" className="flex w-60 items-center  justify-center mt-4 group hover:bg-transparent cursor-pointer">
                         <Storefront size={24} className="text-white  group-hover:text-black"/>
                         <label htmlFor="" className="w-48 h-6 px-2 items-center text-white  group-hover:text-black cursor-pointer">
                             Fornecedores
                         </label>
-                    </a>
-                    <a href="/" className="flex w-60 items-center  justify-center mt-4 group hover:bg-transparent cursor-pointer">
+                    </Link>
+                    <Link to="/equipe" className="flex w-60 items-center  justify-center mt-4 group hover:bg-transparent cursor-pointer">
                         <Note size={24} className="text-white  group-hover:text-black"/>
                         <label htmlFor="" className="w-48 h-6 px-2 items-center text-white  group-hover:text-black cursor-pointer">
                             Compras
                         </label>
-                    </a>
-                    <a href="/" className="flex w-60 items-center  justify-center mt-4 group hover:bg-transparent cursor-pointer">
+                    </Link>
+                    <Link to="/fornecedorperfil" className="flex w-60 items-center  justify-center mt-4 group hover:bg-transparent cursor-pointer">
                         <UserSquare size={24} className="text-white  group-hover:text-black"/>
                         <label htmlFor="" className="w-48 h-6 px-2 items-center text-white  group-hover:text-black cursor-pointer">
                             Perfil
                         </label>
-                    </a>
+                    </Link>
             </div>
             <div className="flex flex-1 p-6">
                     <a href="/" className="flex w-60 items-center  justify-center mt-4 group hover:bg-transparent cursor-pointer">
