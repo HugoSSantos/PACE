@@ -8,28 +8,33 @@ export function Equipe(){
     const elementos = [
         {
             image: "/vite.svg",
-            categoria: "Fulano",
-            quantidade: 10
+            colaborador: "Fulano",
+            quantidade: 10,
+            url: "/perfilequipe"
         },
         {
             image: "/vite.svg",
-            categoria: "Beltrano",
-            quantidade: 30
+            colaborador: "Beltrano",
+            quantidade: 30,
+            url: "/perfilequipe"
         },
         {
             image: "/vite.svg",
-            categoria: "Ciclano",
-            quantidade: 30
+            colaborador: "Ciclano",
+            quantidade: 30,
+            url: "/perfilequipe"
         },
         {
             image: "/vite.svg",
-            categoria: "Alberlando",
-            quantidade: 30
+            colaborador: "Alberlando",
+            quantidade: 30,
+            url: "/perfilequipe"
         },
         {
             image: "/vite.svg",
-            categoria: "Marfiano",
-            quantidade: 30
+            colaborador: "Marfiano",
+            quantidade: 30,
+            url: "/perfilequipe"
         },
         
     ]
@@ -37,7 +42,7 @@ export function Equipe(){
 
     return(
     <div className="flex max-h-[100vh]">
-        <SideBar name="Fulano de Tal" email="fdt@pace.com" image="https://avatars.githubusercontent.com/u/50108497?v=4.png"/>
+        <SideBar />
         <div className="flex flex-2 w-full flex-col">
                 <div className="w-full mt-8 ">
                     <div className="w-[50%] flex-1 ml-12 border border-black items-center justify-center p-2">
@@ -45,7 +50,7 @@ export function Equipe(){
                         <input type="text" className="w-full px-8" placeholder="Pesquise sua categoria"/>
                     </div>
                     <div className="flex flex-row ml-12 h-8 w-[50%]">
-                        <p className="text-xs">Organizado por: <select name="" id="">
+                        <p className="text-xs">Organizado por: <select name="" id="" className="bg-transparent">
                             <option value="Mais usada">Mais Comprada</option>
                             <option value="Menos usada">Menos Comprada</option>
                             <option value="Maior quantidade">Maior Quantidade</option>
@@ -55,7 +60,7 @@ export function Equipe(){
                         <div className="grid grid-cols-auto-fit">
                             {
                                 elementos.map( item => (
-                                    <CardFornecedor image={item.image} category={item.categoria} quantity={item.quantidade}/>
+                                    <CardFornecedor image={item.image} descricao={item.colaborador} quantity={item.quantidade} url={item.url}/>
                                 )
                                     
                                 )

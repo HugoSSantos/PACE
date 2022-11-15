@@ -1,13 +1,57 @@
 import * as Dialog from '@radix-ui/react-dialog'
 import { SideBar } from "../components/SideBar";
+import { TableItems } from '../components/TableItems';
 
 
 export function FornecedorPerfil(){
+
+    const elementos = [{
+        id: 1,
+        fornecedor: "Arcelar Michelan",
+        produto: "Governo",
+        valor: 105873.14,
+        avalicao: "nao entregue",
+        image: '/vite.svg',
+        url: "/fornecedorperfil"
+    },
+    {
+        id: 2,
+        fornecedor: "Dell Brasil",
+        produto: "Dell 14",
+        valor: 7873.14,
+        avalicao: "chegou",
+        url: "/fornecedorperfil"
+    },
+    {
+        id: 3,
+        fornecedor: "Dell Brasil",
+        produto: "Dell 14",
+        valor: 7873.14,
+        avalicao: "chegou",
+        url: "/fornecedorperfil"
+    },
+    {
+        id: 4,
+        fornecedor: "Dell Brasil",
+        produto: "Dell 14",
+        valor: 7873.14,
+        avalicao: "chegou",
+        url: "/fornecedorperfil"
+    },
+    {
+        id: 5,
+        fornecedor: "Dell Brasil",
+        produto: "Dell 14",
+        valor: 7873.14,
+        avalicao: "chegou",
+        url: "/fornecedorperfil"
+    },]
+
     return(
         <div className='flex'>
-            <SideBar name='Fulano de Tal' email='fdt@pace.com' image='https://avatars.githubusercontent.com/u/50108497?v=4.png'/>
+            <SideBar />
             <div className='flex flex-2 flex-col w-full'>
-                <div className='flex h-[60%] flex-col mb-4 border-b border-gray-500'>
+                <div className='flex h-[55%] flex-col mb-4 border-b border-gray-500'>
                     <div className='h-[80%]'>
                         <div className='flex justify-between p-10'>
                             <div className='flex'>
@@ -19,7 +63,7 @@ export function FornecedorPerfil(){
                                     </div>
                                     <div>
                                         <p className=''>Fone</p>
-                                        <a href="tel:+5581997069559" className='decoration-none'>(81)9 97069559</a>
+                                        <a href="tel:+55" className='decoration-none'>()</a>
                                     </div>                         
                                     <div>
                                         <p>E-mail</p>
@@ -99,35 +143,48 @@ export function FornecedorPerfil(){
                     <div className="flex flex-col w-full ">
                             <div className="flex p-1.5 w-full">
                                 <div className="border rounded-lg w-full">
-                                    <p>Organizado por <select name="" id="">
+                                    <p>Organizado por <select name="" id="" className='bg-transparent'>
                                         <option value="">Mais bem avaliado</option>
                                         <option value="">Menos bem avaliado</option>
                                         <option value="">Mais Compras realizadas</option>
                                         <option value="">Menos Compras realizadas</option>    
                                     </select></p>
-                                    <table className="min-w-full divide-y-8">
-                                        <thead className="bg-[#D9D9D9]">
-                                            <th scope="col" className="px-6 py-4 text-xs">Fornecedor</th>
-                                            <th scope="col" className="px-6 py-4 text-xs">Produto</th>
-                                            <th scope="col" className="px-6 py-4 text-xs">Valor</th>
-                                            <th scope="col" className="px-6 py-4 text-xs">Avaliação</th>
-                                            <th scope="col" className="px-6 py-4 text-xs">Detalhes</th>
-                                        </thead>
-                                        <tbody className="divide-y-8">
-                                            {/* {elementos.map(item => (
-                                                <TableItems
-                                                    fornecedor={item.fornecedor}
-                                                    produto={item.produto}
-                                                    valor={item.valor}
-                                                    avaliacao={item.avalicao}
-                                                    image={item.image}
-                                                />
-                                            )
+                                    <div className="flex flex-1 max-h-[70vh] items-start justify-center object-fill mt-2 overflow-y-scroll scrollbar-thin scrollbar-thumb-transparent scrollbar-track-transparent">
+                                        <div className="flex flex-col w-full ">
+                                                <div className="flex p-1.5 w-full">
+                                                    <div className="flex w-full">
+                                                        <table className="min-w-full divide-y-8">
+                                                            <thead className="flex bg-[#D9D9D9]">
+                                                                <th scope="col" className="flex-1 px-6 py-4 text-xs">Fornecedor</th>
+                                                                <th scope="col" className="flex-1 px-6 py-4 text-xs">Produto</th>
+                                                                <th scope="col" className="flex-1 px-6 py-4 text-xs">Valor</th>
+                                                                <th scope="col" className="flex-1 px-6 py-4 text-xs">Avaliação</th>
+                                                                <th scope="col" className="flex-1 px-6 py-4 text-xs">Detalhes</th>
+                                                            </thead>
+                                                            <tbody className="divide-y-8">
+                                                                {elementos.map(item => (
+                                                                    <TableItems
+                                                                        fornecedor={item.fornecedor}
+                                                                        produto={item.produto}
+                                                                        valor={item.valor}
+                                                                        avaliacao={item.avalicao}
+                                                                        image={item.image}
+                                                                        url="/fornecedorperfil"
+                                                                    />
+                                                                )
 
-                                            )} */}
-                                        </tbody>
+                                                                )}
+                                                            </tbody>
 
-                                    </table>
+                                                        </table>
+
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                        
+                                    
+                                    </div>
 
                                 </div>
                             </div>

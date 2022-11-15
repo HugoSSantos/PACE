@@ -1,18 +1,19 @@
 
 interface CardFornecedorProps{
     image: string;
-    category: string;
+    descricao: string;
     quantity?: number;
+    url: string;
 }
 
-export function CardFornecedor({image, category, quantity}: CardFornecedorProps){
+export function CardFornecedor({image, descricao, quantity, url}: CardFornecedorProps){
 
     return(
-        <button className="flex flex-col items-center justify-start w-40 h-40 p-4 mx-7 my-7 border rounded-xl border-black bg-gray-300"
+        <a href={url} className="flex flex-col items-center justify-start w-40 h-40 p-4 mx-7 my-7 border rounded-xl border-black bg-gray-300"
             onClick={() => console.log('clicou cardFornecedor')}>
             <img src={image} alt="logo" className="w-6 h-6 rounded-full" />
-            <p className="my-3">{category}</p>
+            <p className="my-3">{descricao}</p>
             <p className="text-xs">{quantity} Fornecedores</p>
-        </button>
+        </a>
     )
 }

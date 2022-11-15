@@ -9,83 +9,308 @@ export function Fornecedores(){
         {
             image: "/vite.svg",
             categoria: "Tecnologia",
-            quantidade: 10
+            quantidade: 10,
+            url: "/fornecedorperfil"
         },
         {
             image: "/vite.svg",
             categoria: "Grafica",
-            quantidade: 30
+            quantidade: 30,
+            url: "/fornecedorperfil"
         },
         {
             image: "/vite.svg",
             categoria: "Grafica",
-            quantidade: 30
+            quantidade: 30,
+            url: "/fornecedorperfil"
         },
         {
             image: "/vite.svg",
             categoria: "Grafica",
-            quantidade: 30
+            quantidade: 30,
+            url: "/fornecedorperfil"
         },
         {
             image: "/vite.svg",
             categoria: "Grafica",
-            quantidade: 30
+            quantidade: 30,
+            url: "/fornecedorperfil"
         },
         {
             image: "/vite.svg",
             categoria: "Tecnologia",
-            quantidade: 10
+            quantidade: 10,
+            url: "/fornecedorperfil"
         },
         {
             image: "/vite.svg",
             categoria: "Grafica",
-            quantidade: 30
+            quantidade: 30,
+            url: "/fornecedorperfil"
         },
         {
             image: "/vite.svg",
             categoria: "Grafica",
-            quantidade: 30
+            quantidade: 30,
+            url: "/fornecedorperfil"
         },
         {
             image: "/vite.svg",
             categoria: "Grafica",
-            quantidade: 30
+            quantidade: 30,
+            url: "/fornecedorperfil"
         },
         {
             image: "/vite.svg",
             categoria: "Grafica",
-            quantidade: 30
+            quantidade: 30,
+            url: "/fornecedorperfil"
         },
         {
             image: "/vite.svg",
             categoria: "Tecnologia",
-            quantidade: 10
+            quantidade: 10,
+            url: "/fornecedorperfil"
         },
         {
             image: "/vite.svg",
             categoria: "Grafica",
-            quantidade: 30
+            quantidade: 30,
+            url: "/fornecedorperfil"
         },
         {
             image: "/vite.svg",
             categoria: "Grafica",
-            quantidade: 30
+            quantidade: 30,
+            url: "/fornecedorperfil"
         },
         {
             image: "/vite.svg",
             categoria: "Grafica",
-            quantidade: 30
+            quantidade: 30,
+            url: "/fornecedorperfil"
         },
         {
             image: "/vite.svg",
             categoria: "Grafica",
-            quantidade: 30
+            quantidade: 30,
+            url: "/fornecedorperfil"
+        },
+        {
+            image: "/vite.svg",
+            categoria: "Grafica",
+            quantidade: 30,
+            url: "/fornecedorperfil"
+        },
+        {
+            image: "/vite.svg",
+            categoria: "Grafica",
+            quantidade: 30,
+            url: "/fornecedorperfil"
+        },
+        {
+            image: "/vite.svg",
+            categoria: "Tecnologia",
+            quantidade: 10,
+            url: "/fornecedorperfil"
+        },
+        {
+            image: "/vite.svg",
+            categoria: "Grafica",
+            quantidade: 30,
+            url: "/fornecedorperfil"
+        },
+        {
+            image: "/vite.svg",
+            categoria: "Grafica",
+            quantidade: 30,
+            url: "/fornecedorperfil"
+        },
+        {
+            image: "/vite.svg",
+            categoria: "Grafica",
+            quantidade: 30,
+            url: "/fornecedorperfil"
+        },
+        {
+            image: "/vite.svg",
+            categoria: "Grafica",
+            quantidade: 30,
+            url: "/fornecedorperfil"
+        },
+        {
+            image: "/vite.svg",
+            categoria: "Grafica",
+            quantidade: 30,
+            url: "/fornecedorperfil"
+        },
+        {
+            image: "/vite.svg",
+            categoria: "Grafica",
+            quantidade: 30,
+            url: "/fornecedorperfil"
+        },
+        {
+            image: "/vite.svg",
+            categoria: "Tecnologia",
+            quantidade: 10,
+            url: "/fornecedorperfil"
+        },
+        {
+            image: "/vite.svg",
+            categoria: "Grafica",
+            quantidade: 30,
+            url: "/fornecedorperfil"
+        },
+        {
+            image: "/vite.svg",
+            categoria: "Grafica",
+            quantidade: 30,
+            url: "/fornecedorperfil"
+        },
+        {
+            image: "/vite.svg",
+            categoria: "Grafica",
+            quantidade: 30,
+            url: "/fornecedorperfil"
+        },
+        {
+            image: "/vite.svg",
+            categoria: "Grafica",
+            quantidade: 30,
+            url: "/fornecedorperfil"
+        },
+        {
+            image: "/vite.svg",
+            categoria: "Grafica",
+            quantidade: 30,
+            url: "/fornecedorperfil"
+        },
+        {
+            image: "/vite.svg",
+            categoria: "Grafica",
+            quantidade: 30,
+            url: "/fornecedorperfil"
+        },
+        {
+            image: "/vite.svg",
+            categoria: "Tecnologia",
+            quantidade: 10,
+            url: "/fornecedorperfil"
+        },
+        {
+            image: "/vite.svg",
+            categoria: "Grafica",
+            quantidade: 30,
+            url: "/fornecedorperfil"
+        },
+        {
+            image: "/vite.svg",
+            categoria: "Grafica",
+            quantidade: 30,
+            url: "/fornecedorperfil"
+        },
+        {
+            image: "/vite.svg",
+            categoria: "Grafica",
+            quantidade: 30,
+            url: "/fornecedorperfil"
+        },
+        {
+            image: "/vite.svg",
+            categoria: "Grafica",
+            quantidade: 30,
+            url: "/fornecedorperfil"
+        },
+        {
+            image: "/vite.svg",
+            categoria: "Grafica",
+            quantidade: 30,
+            url: "/fornecedorperfil"
+        },
+        {
+            image: "/vite.svg",
+            categoria: "Grafica",
+            quantidade: 30,
+            url: "/fornecedorperfil"
+        },
+        {
+            image: "/vite.svg",
+            categoria: "Tecnologia",
+            quantidade: 10,
+            url: "/fornecedorperfil"
+        },
+        {
+            image: "/vite.svg",
+            categoria: "Grafica",
+            quantidade: 30,
+            url: "/fornecedorperfil"
+        },
+        {
+            image: "/vite.svg",
+            categoria: "Grafica",
+            quantidade: 30,
+            url: "/fornecedorperfil"
+        },
+        {
+            image: "/vite.svg",
+            categoria: "Grafica",
+            quantidade: 30,
+            url: "/fornecedorperfil"
+        },
+        {
+            image: "/vite.svg",
+            categoria: "Grafica",
+            quantidade: 30,
+            url: "/fornecedorperfil"
+        },
+        {
+            image: "/vite.svg",
+            categoria: "Grafica",
+            quantidade: 30,
+            url: "/fornecedorperfil"
+        },
+        {
+            image: "/vite.svg",
+            categoria: "Grafica",
+            quantidade: 30,
+            url: "/fornecedorperfil"
+        },
+        {
+            image: "/vite.svg",
+            categoria: "Tecnologia",
+            quantidade: 10,
+            url: "/fornecedorperfil"
+        },
+        {
+            image: "/vite.svg",
+            categoria: "Grafica",
+            quantidade: 30,
+            url: "/fornecedorperfil"
+        },
+        {
+            image: "/vite.svg",
+            categoria: "Grafica",
+            quantidade: 30,
+            url: "/fornecedorperfil"
+        },
+        {
+            image: "/vite.svg",
+            categoria: "Grafica",
+            quantidade: 30,
+            url: "/fornecedorperfil"
+        },
+        {
+            image: "/vite.svg",
+            categoria: "Grafica",
+            quantidade: 30,
+            url: "/fornecedorperfil"
         }
     ]
 
     return(
-        <div className="flex max-h-[100vh] overflow-hidden">
-            <SideBar name="Fulano de Tal" email="fdt@pace.com" image="https://avatars.githubusercontent.com/u/50108497?v=4.png"/>
+        <div className="flex max-h-[100vh]">
+            <SideBar/>
             <div className="flex flex-2 w-full flex-col">
                 <div className="w-full mt-8 ">
                     <div className="w-[50%] flex-1 ml-12 border border-black items-center justify-center p-2">
@@ -93,17 +318,17 @@ export function Fornecedores(){
                         <input type="text" className="w-full px-8" placeholder="Pesquise sua categoria"/>
                     </div>
                     <div className="flex flex-row ml-12 h-8 w-[50%]">
-                        <p className="text-xs">Organizado por: <select name="" id="">
+                        <p className="text-xs">Organizado por: <select name="" id="" className="bg-transparent">
                             <option value="Mais usada">Mais Comprada</option>
                             <option value="Menos usada">Menos Comprada</option>
                             <option value="Maior quantidade">Maior Quantidade</option>
                             <option value="Menor quantidade">Menor Quantidade</option>
                             </select></p></div>
-                    <div className="h-[36rem] overflow-x-scroll scrollbar-thin scrollbar-thumb-transparent scrollbar-track-transparent">
+                    <div className="max-h-[80vh] overflow-x-scroll scrollbar-thin scrollbar-thumb-transparent scrollbar-track-transparent">
                         <div className="grid grid-cols-auto-fit">
                             {
                                 elementos.map( item => (
-                                    <CardFornecedor image={item.image} category={item.categoria} quantity={item.quantidade}/>
+                                    <CardFornecedor image={item.image} descricao={item.categoria} quantity={item.quantidade} url={item.url}/>
                                 )
                                     
                                 )
