@@ -17,11 +17,14 @@ Para uso desta plataforma através deste repositorio será necessário ter algum
 * NPM, para poder instalar os modulos necessários
 
 Após realizar o clone do repositorio deverá acessar a pasta web e usar o comando:
+
 > npm i
 
 que irá fazer a isntalação dos módulos necessários.
 Após finalizar a instalação dos módulos deverá usar o seguinte comando:
+
 > npm run dev
+
 onde irá apresentar no terminal o link do localhost que deverá ser usado para acessar a platafor
 
 ### Site
